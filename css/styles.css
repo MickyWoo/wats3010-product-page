@@ -1,12 +1,17 @@
 .share-links{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  
+   background-color: yellowgreen;
+  }
+.share-links a:hover{
+background-color:yellow;
 }
 
+header .p {
+text-align: center;
+    padding: 5px;
+
+}
 .row{
-    display: flex;
+    display: block;
     
 }
 .ol{
