@@ -4,3 +4,14 @@
     justify-content: space-between;
   
 }
+
+.row{
+    display: flex;
+    
+}
+.ol{
+    text-align: center;
+    text-decoration: none;
+    padding: auto; 
+    justify-content: center;
+}
