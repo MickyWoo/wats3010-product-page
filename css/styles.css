@@ -1,22 +1,73 @@
 .share-links{
-   background-color: yellowgreen;
+   text-decoration: underline;
+   
   }
 .share-links a:hover{
-background-color:yellow;
+background-color:yellowgreen;
 }
 
-header .p {
+header {
 text-align: center;
-    padding: 5px;
+    padding: 2px;
 
 }
 .row{
-    display: block;
+    display: flex;
+    padding: 5px;
     
 }
-.ol{
+ol li{
     text-align: center;
     text-decoration: none;
     padding: auto; 
-    justify-content: center;
+    
 }
+
+.zoom {
+
+    transition: transform .2s;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+    image
+  }
+
+
+/* xs */
+@media (min-width: 320px) {
+ 
+  
+    #width-val:before {
+      content: "320px";
+    }
+  }
+  
+  /* handheld  */
+  @media (min-width: 567px) {
+  
+  
+    #width-val:before {
+      content: "567px";
+    }
+  }
+  
+  /* tablets */
+  @media (min-width: 731px) {
+ 
+  
+    #width-val:before {
+      content: "731px";
+    }
+  }
+  
+  /* laptops+ */
+  @media (min-width: 992px) {
+
+  
+    #width-val:before {
+      content: "992px";
+    }
+  }
