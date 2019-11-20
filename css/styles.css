@@ -1,3 +1,10 @@
+.container{
+    background-image: url("assets/images/shopbackground.jpg");
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 .share-links{
    text-decoration: underline;
    
@@ -8,19 +15,19 @@ background-color:yellowgreen;
 
 header {
 text-align: center;
-    padding: 2px;
+    padding: 50px 2px;
+  text-decoration: underline;
 
 }
+.title{
+    background-color:lightcoral;
+    color: blue;
+   
+}
+
 .row{
     display: flex;
-    padding: 5px;
-    
-}
-ol li{
-    text-align: center;
-    text-decoration: none;
-    padding: auto; 
-    
+    padding: 5px; 
 }
 
 .zoom {
@@ -32,7 +39,7 @@ ol li{
     -ms-transform: scale(1.5); /* IE 9 */
     -webkit-transform: scale(1.5); /* Safari 3-8 */
     transform: scale(1.5); 
-    image
+    
   }
 
 
