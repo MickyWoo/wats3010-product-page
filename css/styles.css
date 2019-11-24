@@ -1,9 +1,9 @@
-.container{
-    background-image: url("assets/images/shopbackground.jpg");
 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+body {
+  background-image: url("../assets/images/shopbackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .share-links{
    text-decoration: underline;
@@ -13,15 +13,26 @@
 background-color:yellowgreen;
 }
 
+.logo{
+  background-color: black;
+}
+
 header {
 text-align: center;
     padding: 50px 2px;
-  text-decoration: underline;
+ 
+  background-color: whitesmoke;
+}
 
+.contact{
+  background-color: white;
+}
+header,p{
+  color:green;
 }
 .title{
-    background-color:lightcoral;
-    color: blue;
+    background-color:lightskyblue;
+    color: red;
    
 }
 

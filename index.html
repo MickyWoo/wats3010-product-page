@@ -56,15 +56,12 @@
                <!-- maring right auto pushes hamburger / links to left giving margin on right 
                       you can do ml-auto as well   Center use mx-auto ( x axis ) -->
                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
+                   
                     <li class="nav-item active">
                          <a class="nav-link" href="contact.html">Contacts <span class="sr-only"></span></a>
                     </li>
 
-                    <!-- I may have to seperate into another class for jusitfy content to space in between -->
-                    <!-- <div class="share-links"> -->
+                 
                     <li class="nav-item active share-links">
                          <a class="nav-link" href="https://twitter.com/" target="_blank">Twitter <span
                                    class="sr-only"></span></a>
@@ -86,6 +83,9 @@
 
      <!-- TODO: Create an area to put the explainer video. -->
      <header>
+          <div class="logo col-lg-12 ">
+          <img class="img-fluid" src="assets/images/Logo.png" alt="Logo">
+          </div>
           <h2 class="title"> Healing Potions </h2>
           <p> A magical type of liquid set to heal a certain amount of health based on the grade chosen.</p>
           <p> Gives you health, can save you from a near death situation and is worth every gold </p>
@@ -104,13 +104,13 @@
           <div class="row">
 
 
-               <div class="col-lg-6">
+               <div class="col-lg-6" style="z-index: 500">
 
-                    <img class="img-fluid zoom " src="assets/images/healing potion.png" alt="Healing Potion">
+                    <img class="img-fluid zoom" src="assets/images/healing potion.png" alt="Healing Potion">
 
 
                </div>
-               <div class="input-group col-lg-6">
+               <div class="input-group col-lg-6" style="z-index: 100">
                     <div class="input-group-prepend">
                          <label class="input-group-text" for="inputGroupSelect01">Potions</label>
                     </div>
