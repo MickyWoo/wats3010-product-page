@@ -27,6 +27,9 @@ text-align: center;
 .contact{
   background-color: white;
 }
+.card-body{
+  background-color: white;
+}
 header,p{
   color:green;
 }
