@@ -4,7 +4,13 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+ 
 }
+.row{
+  margin: 25px 0;
+  justify-content: center;
+}
+
 .share-links{
    text-decoration: underline;
    
