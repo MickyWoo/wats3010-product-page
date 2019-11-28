@@ -35,9 +35,12 @@
 
 </head>
 
-<body>
+<!-- add data-spy="scroll" to the element you want to spy on (most typically this would be the <body>). 
+     Then add the data-target attribute with the ID or class of the parent element of any Bootstrap .nav component. 
+-->
+<body body data-spy="scroll" data-target="#nav-right" data-offset="0">
 
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 
           <a class="navbar-brand" href="index.html">Pumal Sols magical Emporium </a>
           <!-- any aria is for screen reading    -->
@@ -77,7 +80,7 @@
                               <a class="nav-link" href="#Description">Description</a>
                          </li>
                          <li class="nav-item">
-                              <a class="nav-link" href="#Video">Video</a>
+                              <a class="nav-link" href="#Product">Product</a>
                          </li>
                          <li class="nav-item">
                               <a class="nav-link" href="#Testimonials">Testimonials</a>
@@ -86,182 +89,173 @@
                               <a class="nav-link" href="#Contact">Contact</a>
                          </li>
                     </ul>
-                    <!-- <div data-spy="scroll" data-target="#nav-right" data-offset="0">
-                              <h4 id="fat"></h4>
-                              
-                              <h4 id="mdo"></h4>
-                            
-                              <h4 id="one"></h4>
-                             
-                              <h4 id="two"></h4>
-                             
-                              <h4 id="three"></h4>
-                           
-                         </div> -->
+             
                </div>
           </div>
 
 
      </nav>
 
-     <div data-spy="scroll" data-target="#nav-right" data-offset="0">
-          <header class="row">
-               <div id="Description" class=" logo col-lg-12 ">
-                    <img class="img-fluid" src="assets/images/Updatelogo.png" alt="Logo">
+
+     <header class="row">
+          <div id="Description" class=" logo col-lg-12 ">
+               <img class="img-fluid" src="assets/images/Updatelogo.png" alt="Logo">
+          </div>
+          <h2 class="title col-lg-12"> Healing Potions </h2>
+          <div class="row my-3">
+               <p> A magical type of liquid set to heal a certain amount of health based on the grade chosen.</p>
+               <p> Gives you health, can save you from a near death situation and is worth every gold </p>
+          </div>
+     </header>
+
+     <h3  id="Product"></h3>
+     <div class="container">
+
+          <!-- video -->
+         
+          <div class="col video">
+               <div class="embed-responsive embed-responsive-16by9">
+
+                    <!-- note the "/embed/" in the link of youtube to properly imbed a video  -->
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/L48g1ZWLMdo"
+                         allowfullscreen>
+                    </iframe>
                </div>
-               <h2 class="title col-lg-12"> Healing Potions </h2>
-               <div class="row my-3">
-                    <p> A magical type of liquid set to heal a certain amount of health based on the grade chosen.</p>
-                    <p> Gives you health, can save you from a near death situation and is worth every gold </p>
-               </div>
-          </header>
-
-
-          <div class="container">
-
-               <!-- video -->
-               <div id="Video" class="col video">
-                    <div class="embed-responsive embed-responsive-16by9">
-
-                         <!-- note the "/embed/" in the link of youtube to properly imbed a video  -->
-                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/L48g1ZWLMdo"
-                              allowfullscreen>
-                         </iframe>
-                    </div>
-
-               </div>
-               <!-- video end  -->
-
-
-               <div class="row">
-
-                    <!-- Potion -->
-                    <div class="col-lg-6" style="z-index: 500">
-
-                         <img class="img-fluid zoom" src="assets/images/healing potion.png" alt="Healing Potion">
-
-
-                    </div>
-
-                    <!-- potion scroll down selector -->
-                    <div class="input-group col-lg-6" style="z-index: 100">
-                         <div class="input-group-prepend">
-                              <label class="input-group-text" for="inputGroupSelect01">Potions</label>
-                         </div>
-                         <select class="custom-select" id="inputGroupSelect01">
-                              <option selected>Select...</option>
-                              <option value="1">Healing Potion</option>
-                              <option value="2">Greater Healing Potion</option>
-                              <option value="3">Superior Healing Potion </option>
-                              <option value="4">Supreme Healing Potion </option>
-                         </select>
-                         <a class="btn btn-primary input-group-text" href="checkout.html" role="button">Check out</a>
-
-                    </div>
-
-
-                    <!-- testimonials -->
-                    <div id="Testimonials"  class="row">
-                         <div class="testimonials col-md-3 col-sm-6">
-                              <div class="">
-
-                                   <img class="card-img-top" src="assets/images/Kaleb.jpg" alt="testimonials 1">
-                                   </a>
-                                   <div class="card-body">
-                                        <h4 class="card-title">
-                                             <p>Kaleb</p>
-                                        </h4>
-                                        <p class="card-text">-One, two, ah threeee-
-                                        </p>
-                                   </div>
-                              </div>
-                         </div>
-
-                         <div class="testimonials col-md-3 col-sm-6">
-                              <div class="">
-
-                                   <img class="card-img-top" src="assets/images/Grog.jpg" alt="testimonials 2">
-                                   </a>
-                                   <div class="card-body">
-                                        <h4 class="card-title">
-                                             <p>Grog</p>
-                                        </h4>
-                                        <p class="card-text">-this looks red, Ack! I'm drinking blood!!!-
-                                        </p>
-                                   </div>
-                              </div>
-                         </div>
-
-                         <div class="testimonials col-md-3 col-sm-6">
-                              <div class="">
-
-                                   <img class="card-img-top" src="assets/images/Fjord.jpg" alt="testimonials 3">
-                                   </a>
-                                   <div class="card-body">
-                                        <h4 class="card-title">
-                                             <p>Fjord</p>
-                                        </h4>
-                                        <p class="card-text">-Great Product, helped me in a pinch-
-                                        </p>
-                                   </div>
-                              </div>
-                         </div>
-
-                         <div class="testimonials col-md-3 col-sm-6">
-                              <div class="">
-
-                                   <img class="card-img-top" src="assets/images/Jester.png" alt="testimonials 4">
-                                   </a>
-                                   <div class="card-body">
-                                        <h4 class="card-title">
-                                             <p>Jester</p>
-                                        </h4>
-                                        <p class="card-text">-This is tottaly a super great product, I just wish it was
-                                             pink-
-                                        </p>
-                                   </div>
-                              </div>
-                         </div>
-
-                    </div>
-
-                    <!-- End of testimonials -->
-
-
-                    <!-- Contact -->
-                    <div id="Contact" class="row">
-                         <!-- Map Column -->
-                         <div class="col-lg-8 mb-4">
-                              <!-- Embedded Google Map -->
-                              <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0"
-                                   marginwidth="0"
-                                   src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
-                         </div>
-                         <div class="contact col-lg-4 mb-4">
-                              <h3>
-                                   contact information
-                              </h3>
-                              <p> If you have questions or concerns about the product feel free to contact us at </p>
-
-
-                              <p> Pumat Sol </p>
-
-                              <p> 3727 W Magnolia Blvd #817</p>
-
-                              <p>Burbank, CA 91505</p>
-
-                         </div>
-                    </div>
-                    <!-- End of Contact -->
-
-               </div>
-               <!-- end of Row -->
 
           </div>
-          <!-- End of Container -->
-          
+          <!-- video end  -->
+
+
+          <div class="row">
+
+               <!-- Potion -->
+               <div class="col-lg-6" style="z-index: 500">
+
+                    <img class="img-fluid zoom" src="assets/images/healing potion.png" alt="Healing Potion">
+
+
+               </div>
+
+               <!-- potion scroll down selector -->
+               <div class="input-group col-lg-6" style="z-index: 100">
+                    <div class="input-group-prepend">
+                         <label class="input-group-text" for="inputGroupSelect01">Potions</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01">
+                         <option selected>Select...</option>
+                         <option value="1">Healing Potion</option>
+                         <option value="2">Greater Healing Potion</option>
+                         <option value="3">Superior Healing Potion </option>
+                         <option value="4">Supreme Healing Potion </option>
+                    </select>
+                    <a class="btn btn-primary input-group-text" href="checkout.html" role="button">Check out</a>
+
+               </div>
+
+
+               <!-- testimonials -->
+               <h3 id="Testimonials"></h3>
+               <div class="row">
+                    <div class="testimonials col-md-3 col-sm-6">
+                         <div class="">
+
+                              <img class="card-img-top" src="assets/images/Kaleb.jpg" alt="testimonials 1">
+                              </a>
+                              <div class="card-body">
+                                   <h4 class="card-title">
+                                        <p>Kaleb</p>
+                                   </h4>
+                                   <p class="card-text">-One, two, ah threeee-
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="testimonials col-md-3 col-sm-6">
+                         <div class="">
+
+                              <img class="card-img-top" src="assets/images/Grog.jpg" alt="testimonials 2">
+                              </a>
+                              <div class="card-body">
+                                   <h4 class="card-title">
+                                        <p>Grog</p>
+                                   </h4>
+                                   <p class="card-text">-this looks red, Ack! I'm drinking blood!!!-
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="testimonials col-md-3 col-sm-6">
+                         <div class="">
+
+                              <img class="card-img-top" src="assets/images/Fjord.jpg" alt="testimonials 3">
+                              </a>
+                              <div class="card-body">
+                                   <h4 class="card-title">
+                                        <p>Fjord</p>
+                                   </h4>
+                                   <p class="card-text">-Great Product, helped me in a pinch-
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="testimonials col-md-3 col-sm-6">
+                         <div class="">
+
+                              <img class="card-img-top" src="assets/images/Jester.png" alt="testimonials 4">
+                              </a>
+                              <div class="card-body">
+                                   <h4 class="card-title">
+                                        <p>Jester</p>
+                                   </h4>
+                                   <p class="card-text">-This is tottaly a super great product, I just wish it was
+                                        pink-
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+
+               <!-- End of testimonials -->
+
+
+               <!-- Contact -->
+               <div id="Contact" class="row">
+                    <!-- Map Column -->
+                    <div class="col-lg-8">
+                         <!-- Embedded Google Map -->
+                         <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0"
+                              marginwidth="0"
+                              src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+                    </div>
+                    <div class="contact col-lg-4 ">
+                         <h3>
+                              contact information
+                         </h3>
+                         <p> If you have questions or concerns about the product feel free to contact us at </p>
+
+
+                         <p> Pumat Sol </p>
+
+                         <p> 3727 W Magnolia Blvd #817</p>
+
+                         <p>Burbank, CA 91505</p>
+
+                    </div>
+               </div>
+               <!-- End of Contact -->
+
+          </div>
+          <!-- end of Row -->
 
      </div>
+     <!-- End of Container -->
+
+
+
 
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
           integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
