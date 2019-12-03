@@ -7,7 +7,7 @@ body {
   position: relative; 
 }
 .row{
-  margin: 25px 0;
+  margin: 35px 0;
   justify-content: center;
 }
 
@@ -60,6 +60,17 @@ header,p{
     -webkit-transform: scale(1.5); /* Safari 3-8 */
     transform: scale(1.5); 
     
+  }
+/*Footer*/
+  .footer-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .footer-item-flex {
+    flex: 0 1 auto;
+  
   }
 
 
