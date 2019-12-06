@@ -32,10 +32,10 @@
 <!-- add data-spy="scroll" to the element you want to spy on (most typically this would be the <body>). 
      Then add the data-target attribute with the ID or class of the parent element of any Bootstrap .nav component. 
 -->
+<!-- this data off set was the biggest issue whth scrollspy....my computer was reading the div too late  -->
+<body data-spy="scroll" data-target="#scroll-nav" data-offset="200">
 
-<body body data-spy="scroll" data-target="#nav-right" data-offset="0">
-
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+     <nav id="scroll-nav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 
           <a class="navbar-brand" href="index.html">Pumal Sols Magical Emporium </a>
           <!-- any aria is for screen reading    -->
@@ -65,7 +65,7 @@
                </ul>
                <div id="nav-right" class="navbar navbar-light ">
 
-                    <ul class="nav nav-pills ">
+                    <ul class="navbar-nav nav-pills ">
                          <li class="nav-item">
                               <a class="nav-link " href="#Description">Description</a>
                          </li>
@@ -87,8 +87,8 @@
      </nav>
 
 
-     <header class="row">
-          <div id="Description" class=" logo col-lg-12 ">
+     <header id="Description" class="row">
+          <div  class=" logo col-lg-12 ">
                <img class="img-fluid" src="assets/images/Updatelogo.png" alt="Logo">
           </div>
           <h2 class="title col-lg-12"> Healing Potions </h2>
@@ -99,12 +99,12 @@
      </header>
 
 
-     <section >
-          <div class="container">
+     <!-- <section  > -->
+          <div id="Product" class="container">
 
                <!-- video -->
 
-               <div id="Product" class="col video">
+               <div  class="col video">
                     <div class="embed-responsive embed-responsive-16by9">
 
                          <!-- note the "/embed/" in the link of youtube to properly imbed a video  -->
@@ -142,13 +142,15 @@
                          <a class="btn btn-primary input-group-text" href="checkout.html" role="button">Check out</a>
 
                     </div>
-     </section>
+               </div>
+          </div>
+     <!-- </section> -->
      <!-- end of Product -->
 
      <!-- testimonials -->
     
-     <section id="Testimonial" class="container">
-          <div  class="row">
+     <section  class="container">
+          <div id="Testimonial" class="row">
                <div class="testimonials col-md-3 col-sm-6">
                     <div class="">
 
@@ -216,8 +218,8 @@
 
 
      <!-- Contact -->
-     <section id="Contact">
-          <div class="row">
+     <!-- <section > -->
+          <div id="Contact" class="row">
                <!-- Map Column -->
                <div class="col-lg-8 ">
                     <!-- Embedded Google Map -->
@@ -240,7 +242,7 @@
                </div>
           </div>
           <!-- End of Contact -->
-     </section>
+     <!-- </section> -->
      </div>
      <!-- end of Row -->
 
@@ -282,7 +284,8 @@ https://cdnjs.com/libraries/smooth-scroll-->
 https://github.com/cferdinandi/smooth-scroll -->
 <script>
 	var scroll = new SmoothScroll('a[href*="#"]');
-</script>
+     </script>
+
 
      
 </body>
