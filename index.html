@@ -6,9 +6,9 @@
      <meta charset="utf-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      <meta name="viewport" content="width=device-width, initial-scale=1">
-     <meta name="description" content= "PumatSol">
+     <meta name="description" content="PumatSol">
      <meta name="author" content="Micky Woo">
-  
+
 
      <title>Pumat Sol's Magical Emproium </title>
      <!-- Bootstrap CSS Framework -->
@@ -23,7 +23,7 @@
 
 
 
-    
+
      <link rel="icon" type="image/png" href="assets/images/icon.png">
      <link rel="stylesheet" href="css/styles.css">
 
@@ -33,6 +33,7 @@
      Then add the data-target attribute with the ID or class of the parent element of any Bootstrap .nav component. 
 -->
 <!-- this data off set was the biggest issue whth scrollspy....my computer was reading the div too late  -->
+
 <body data-spy="scroll" data-target="#scroll-nav" data-offset="200">
 
      <nav id="scroll-nav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -85,10 +86,11 @@
 
 
      </nav>
+     <!-- End of Nav -->
 
-
-     <header id="Description" class="row">
-          <div  class=" logo col-lg-12 ">
+     <!-- Description Part  -->
+     <header id="Description" class="mx-0">
+          <div class=" logo col-lg-12 ">
                <img class="img-fluid" src="assets/images/Updatelogo.png" alt="Logo">
           </div>
           <h2 class="title col-lg-12"> Healing Potions </h2>
@@ -99,57 +101,57 @@
      </header>
 
 
-     <!-- <section  > -->
-          <div id="Product" class="container">
+     <!-- <Product Section   > -->
+     <div id="Product" class="container">
 
-               <!-- video -->
+          <!-- video -->
 
-               <div  class="col video">
-                    <div class="embed-responsive embed-responsive-16by9">
+          <div class="col video">
+               <div class="embed-responsive embed-responsive-16by9">
 
-                         <!-- note the "/embed/" in the link of youtube to properly imbed a video  -->
-                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/L48g1ZWLMdo"
-                              allowfullscreen>
-                         </iframe>
-                    </div>
+                    <!-- note the "/embed/" in the link of youtube to properly imbed a video  -->
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/L48g1ZWLMdo"
+                         allowfullscreen>
+                    </iframe>
+               </div>
+
+          </div>
+          <!-- video end  -->
+
+
+          <div class="row">
+
+               <!-- Potion -->
+               <div class="col-lg-6" style="z-index: 500">
+
+                    <img class="img-fluid zoom" src="assets/images/healing potion.png" alt="Healing Potion">
+
 
                </div>
-               <!-- video end  -->
 
-
-               <div class="row">
-
-                    <!-- Potion -->
-                    <div class="col-lg-6" style="z-index: 500">
-
-                         <img class="img-fluid zoom" src="assets/images/healing potion.png" alt="Healing Potion">
-
-
+               <!-- potion scroll down selector -->
+               <div class="input-group col-lg-6" style="z-index: 100">
+                    <div class="input-group-prepend">
+                         <label class="input-group-text" for="inputGroupSelect01">Potions</label>
                     </div>
+                    <select class="custom-select" id="inputGroupSelect01">
+                         <option selected>Select...</option>
+                         <option value="1">Healing Potion</option>
+                         <option value="2">Greater Healing Potion</option>
+                         <option value="3">Superior Healing Potion </option>
+                         <option value="4">Supreme Healing Potion </option>
+                    </select>
+                    <a class="btn btn-primary input-group-text" href="checkout.html" role="button">Check out</a>
 
-                    <!-- potion scroll down selector -->
-                    <div class="input-group col-lg-6" style="z-index: 100">
-                         <div class="input-group-prepend">
-                              <label class="input-group-text" for="inputGroupSelect01">Potions</label>
-                         </div>
-                         <select class="custom-select" id="inputGroupSelect01">
-                              <option selected>Select...</option>
-                              <option value="1">Healing Potion</option>
-                              <option value="2">Greater Healing Potion</option>
-                              <option value="3">Superior Healing Potion </option>
-                              <option value="4">Supreme Healing Potion </option>
-                         </select>
-                         <a class="btn btn-primary input-group-text" href="checkout.html" role="button">Check out</a>
-
-                    </div>
                </div>
           </div>
+     </div>
      <!-- </section> -->
      <!-- end of Product -->
 
      <!-- testimonials -->
-    
-     <section  class="container">
+
+     <section class="container">
           <div id="Testimonial" class="row">
                <div class="testimonials col-md-3 col-sm-6">
                     <div class="">
@@ -218,31 +220,31 @@
 
 
      <!-- Contact -->
-     <!-- <section > -->
-          <div id="Contact" class="row">
-               <!-- Map Column -->
-               <div class="col-lg-8 ">
-                    <!-- Embedded Google Map -->
-                    <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                         src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
-               </div>
-               <div class="contact col-lg-4">
-                    <h3>
-                         contact information
-                    </h3>
-                    <p> If you have questions or concerns about the product feel free to contact us at </p>
 
-
-                    <p> Pumat Sol </p>
-
-                    <p> 3727 W Magnolia Blvd #817</p>
-
-                    <p>Burbank, CA 91505</p>
-
-               </div>
+     <div id="Contact" class="row">
+          <!-- Map Column -->
+          <div class="col-lg-8 ">
+               <!-- Embedded Google Map -->
+               <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
           </div>
-          <!-- End of Contact -->
-     <!-- </section> -->
+          <div class="contact col-lg-4">
+               <h3>
+                    contact information
+               </h3>
+               <p> If you have questions or concerns about the product feel free to contact us at </p>
+
+
+               <p> Pumat Sol </p>
+
+               <p> 3727 W Magnolia Blvd #817</p>
+
+               <p>Burbank, CA 91505</p>
+
+          </div>
+     </div>
+     <!-- End of Contact -->
+
      </div>
      <!-- end of Row -->
 
@@ -252,7 +254,7 @@
      <!-- Footer -->
      <footer class=" bg-dark">
 
-          
+
           <div class="container text-white">
                <div class="footer-flex">
                     <p class=" footer-flex-item">Copyright &copy; Pumat Sol 2019 </p>
@@ -263,7 +265,7 @@
      </footer>
 
 
-  
+
 
      <!-- Boostrap  -->
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -276,18 +278,18 @@
           integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
      </script>
 
-<!-- SmoothScroll Script  
+     <!-- SmoothScroll Script  
 https://cdnjs.com/libraries/smooth-scroll-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.min.js"></script>
 
-<!-- Smooth Scroll Selector of All to transiton to "#"
+     <!-- Smooth Scroll Selector of All to transiton to "#"
 https://github.com/cferdinandi/smooth-scroll -->
-<script>
-	var scroll = new SmoothScroll('a[href*="#"]');
+     <script>
+          var scroll = new SmoothScroll('a[href*="#"]');
      </script>
 
 
-     
+
 </body>
 
 </html>

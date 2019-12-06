@@ -9,6 +9,8 @@ body {
 .row{
   margin: 155px 0;
   justify-content: center;
+  display: flex;
+  padding: 5px; 
 }
 
 .share-links{
@@ -25,9 +27,10 @@ background-color:yellowgreen;
 
 header {
 text-align: center;
+margin: 56px;
     
  
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 .contact{
@@ -45,10 +48,6 @@ header,p{
    
 }
 
-.row{
-    display: flex;
-    padding: 5px; 
-}
 
 .zoom {
 
