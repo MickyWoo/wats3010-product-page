@@ -26,6 +26,7 @@
 
      <link rel="icon" type="image/png" href="assets/images/icon.png">
      <link rel="stylesheet" href="css/styles.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
@@ -141,7 +142,7 @@
                          <option value="3">Superior Healing Potion </option>
                          <option value="4">Supreme Healing Potion </option>
                     </select>
-                    <a class="btn btn-primary input-group-text" href="checkout.html" role="button">Check out</a>
+                    <a class="btn btn-primary input-group-text" href="404.html" role="button">Check out</a>
 
                </div>
           </div>
@@ -156,7 +157,7 @@
                <div class="testimonials col-md-3 col-sm-6">
                     <div class="">
 
-                         <img class="card-img-top" src="assets/images/Kaleb.jpg" alt="testimonials 1">
+                         <img data-aos="fade-up" class="card-img-top" src="assets/images/Kaleb.jpg" alt="testimonials 1">
                          </a>
                          <div class="card-body">
                               <h4 class="card-title">
@@ -171,7 +172,7 @@
                <div class="testimonials col-md-3 col-sm-6">
                     <div class="">
 
-                         <img class="card-img-top" src="assets/images/Grog.jpg" alt="testimonials 2">
+                         <img data-aos="fade-down" class="card-img-top" src="assets/images/Grog.jpg" alt="testimonials 2">
                          </a>
                          <div class="card-body">
                               <h4 class="card-title">
@@ -186,7 +187,7 @@
                <div class="testimonials col-md-3 col-sm-6">
                     <div class="">
 
-                         <img class="card-img-top" src="assets/images/Fjord.jpg" alt="testimonials 3">
+                         <img data-aos="fade-left" class="card-img-top" src="assets/images/Fjord.jpg" alt="testimonials 3">
                          </a>
                          <div class="card-body">
                               <h4 class="card-title">
@@ -199,9 +200,9 @@
                </div>
 
                <div class="testimonials col-md-3 col-sm-6">
-                    <div class="">
+                    <div  class="">
 
-                         <img class="card-img-top" src="assets/images/Jester.png" alt="testimonials 4">
+                         <img  data-aos="flip-up" class="card-img-top" src="assets/images/Jester.png" alt="testimonials 4">
                          </a>
                          <div class="card-body">
                               <h4 class="card-title">
@@ -288,7 +289,13 @@ https://github.com/cferdinandi/smooth-scroll -->
           var scroll = new SmoothScroll('a[href*="#"]');
      </script>
 
-
+     <!-- Animation  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 3000,
+        })
+    </script>
 
 </body>
 

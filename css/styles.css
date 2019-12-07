@@ -40,7 +40,7 @@ margin: 56px;
   background-color: white;
 }
 header,p{
-  color:green;
+  color:#2d862d;
 }
 .title{
     background-color:lightskyblue;
@@ -48,6 +48,17 @@ header,p{
    
 }
 
+
+
+.message{
+font-size:100px;
+padding: 20px;
+}
+.item li{
+  font-size: 30px;
+  background-color: white;
+  text-decoration: none;
+}
 
 .zoom {
 
