@@ -22,7 +22,7 @@ background-color:yellowgreen;
 }
 
 .logo{
-  background-color: black;
+  background-color: #66ff66;
 }
 
 header {
@@ -40,11 +40,12 @@ margin: 56px;
   background-color: white;
 }
 header,p{
-  color:#2d862d;
+  color:blue;
+  font-size: 18px;
 }
 .title{
-    background-color:lightskyblue;
-    color: red;
+
+    color: #0000ff;
    
 }
 
